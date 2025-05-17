@@ -1,0 +1,51 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("restaurant_background.jpg"); /* Darker background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff; /* Light text for contrast */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.85); /* Slightly less opaque white */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: #f0ad4e; /* Gold/Orange color */
+    margin-bottom: 30px;
+}
+
+.menu-section {
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.menu-item {
+    border: none; /* Remove borders */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.menu-item img {
+    width:

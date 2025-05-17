@@ -1,0 +1,89 @@
+body {
+    background: url('https://cdn.create.vista.com/api/media/small/13619993/stock-vector-illustration-of-vintage-retro-frame-with-restaurant-menu-design') no-repeat center center fixed;
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-attachment: fixed; /* Makes the background image stay fixed while scrolling */
+    color: white; /* Make text color white for visibility */
+    padding: 30px 0;
+}
+
+
+/* Styling for Menu Container */
+.menu-container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+/* Top Menu Container */
+.top-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+/* Menu Sections */
+.menu-section {
+    width: 40%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent White Background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-section:hover {
+    transform: scale(1.05);
+}
+
+/* Unique Colors for Each Section */
+#snacks-section {
+    border-left: 5px solid #ff5733; /* Orange */
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+}
+
+#desserts-section {
+    border-left: 5px solid #F5AEF0; /* Pink */
+    background: linear-gradient(to right, #ff9a9e, #fad0c4); 
+}
+
+#main-course-section {
+    border-left: 5px solid #455AC0; /* Purple */
+    background: linear-gradient(to right, #7787D7, #A8AEC9);
+}
+
+#chinese-section {
+    border-left: 5px solid #9EF703; /* Yellow */
+    background: linear-gradient(to right, #ffcc00, #C4D777); 
+}
+
+.menu-section h2 {
+    color: #333;
+}
+
+/* Menu List */
+.menu-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-section li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Dotted Vertical Line */
+.dotted-line {
+    width: 2px;
+    height: 150px;
+    border-left: 2px dotted black;
+}
+
+/* Horizontal Line */
+hr {
+    border: 1px solid gray;
+    margin: 40px auto;
+    width: 60%;
+}

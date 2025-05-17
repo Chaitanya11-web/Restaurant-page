@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Order Page</title>
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Order Your Food</h1>
+
+        <div class="menu-section">
+            <h2>Chinese</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="fried_rice.jpg" alt="Fried Rice">
+                    <p>Fried Rice - ₹140 <button onclick="addToCart('Fried Rice', 140)">Add</button></p>
+                </div>
+                <div class="menu-item">
+                    <img src="chow_mein.jpg" alt="Chow Mein">
+                    <p>Chow Mein - ₹120 <button onclick="addToCart('Chow Mein', 120)">Add</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Snacks</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="samosa.jpg" alt="Samosa">
+                    <p>Samosa - ₹20 <button onclick="addToCart('Samosa', 20)">Add</button></p>
+                </div>
+                <div class="menu-item">
+                    <img src="paneer_pakora.jpg" alt="Paneer Pakora">
+                    <p>Paneer Pakora - ₹80 <button onclick="addToCart('Paneer Pakora', 80)">Add</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Main Course</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="butter_chicken.jpg" alt="Butter Chicken">
+                    <p>Butter Chicken - ₹320 <button onclick="addToCart('Butter Chicken', 320)">Add</button></p>
+                </div>
+                <div class="menu-item">
+                    <img src="dal_makhani.jpg" alt="Dal Makhani">
+                    <p>Dal Makhani - ₹250 <button onclick="addToCart('Dal Makhani', 250)">Add</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section">
+            <h2>Desserts</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="gulab_jamun.jpg" alt="Gulab Jamun">
+                    <p>Gulab Jamun - ₹80 <button onclick="addToCart('Gulab Jamun', 80)">Add</button></p>
+                </div>
+                <div class="menu-item">
+                    <img src="rasmalai.jpg" alt="Rasmalai">
+                    <p>Rasmalai - ₹90 <button onclick="addToCart('Rasmalai', 90)">Add</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p><strong>Total: ₹<span id="total-price">0</span></strong></p>
+        </div>
+
+        <div class="location">
+            <h2>Enter Your Location</h2>
+            <input type="text" id="house-number" placeholder="House Number" required><br>
+            <input type="text" id="landmark" placeholder="Landmark" required><br>
+            <input type="text" id="locality" placeholder="Nearby Locality" required><br>
+            <input type="text" id="city" placeholder="City" required>
+        </div>
+
+        <div class="payment">
+            <h2>Select Payment Method</h2>
+            <select id="payment-method">
+                <option value="UPI">UPI</option>
+                <option value="Net Banking">Net Banking</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+            </select>
+        </div>
+
+        <button class="order-btn" onclick="placeOrder()">Order Now</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

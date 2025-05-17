@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+        /* Set the background image for the entire body */
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('https://plus.unsplash.com/premium_photo-1705056547423-de4ef0f85bf7?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzdGF1cmFudCUyMHdlYnNpdGV8ZW58MHx8MHx8fDA%3D');
+            background-size: cover;   /* Cover the entire screen */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+
+            /* Use Flexbox to center content */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        button{
+          background-color:#75A5D0;
+        }
+.order-button{
+  color:black;
+  width:90px;
+  height:50px;
+}
+        /* Style the navigation bar */
+        nav {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+              background-color:#DFDA4A; /* Semi-transparent background */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            color: blue;
+        }
+
+        /* Some text styles */
+        h1 {
+            font-size: 3em;
+            color: yellow;
+        }
+
+        q {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="order.html">Order</a>
+        <a href="menu.html">Menu</a>
+    </nav>
+
+    <!-- Main content -->
+    <div>
+        <h1><q>Feel the joy of mouthwatering food</q></h1>
+        <button class="order-button" onclick="window.location.href='order.html'">Order Now</button>
+
+    </div>
+</body>
+</html>
+
+
